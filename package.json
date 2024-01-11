@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-projects",
+  "name": "jsonresume-theme-even-crewshin",
   "version": "0.30.0",
   "description": "A flat JSON Resume theme based on jsonresume-theme-projects",
   "keywords": [
@@ -12,14 +12,14 @@
   ],
   "homepage": "",
   "bugs": {
-    "url": "https://github.com/dmsemenov/jsonresume-theme-projects/issues"
+    "url": "https://github.com/crewshin/jsonresume-theme-even/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmsemenov/jsonresume-theme-projects"
+    "url": "https://github.com/crewshin/jsonresume-theme-even"
   },
   "license": "MIT",
-  "author": "Dmitry Semenov",
+  "author": "Gene Crucean",
   "type": "module",
   "exports": {
     "require": "./dist/index.cjs",
