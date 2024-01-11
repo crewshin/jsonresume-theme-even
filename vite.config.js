@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite'
-import pkg from './package.json' assert { type: 'json' }
+import { defineConfig } from "vite"
+import pkg from "./package.json" assert { type: "json" }
 
 export default defineConfig(({ mode }) => {
-  if (mode === 'development') {
+  if (mode === "development") {
     return {
       build: {
-        outDir: './public',
-        target: 'esnext',
+        outDir: "./public",
+        target: "esnext",
       },
       publicDir: false,
     }
@@ -16,15 +16,15 @@ export default defineConfig(({ mode }) => {
     build: {
       copyPublicDir: false,
       lib: {
-        entry: './index.js',
-        fileName: 'index',
-        formats: ['es', 'cjs', 'umd'],
-        name: 'jsonresumeThemeEven',
+        entry: "./index.js",
+        fileName: "index",
+        formats: ["es", "cjs", "umd"],
+        name: "jsonresumeThemeEvenCrewshin",
       },
       rollupOptions: {
         external: [...Object.keys(pkg.dependencies), /^node:.*/],
       },
-      target: 'esnext',
+      target: "esnext",
       test: {
         clearMocks: true,
       },

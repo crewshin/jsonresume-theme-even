@@ -1,18 +1,18 @@
-import Awards from './components/awards.js'
-import Certificates from './components/certificates.js'
-import Education from './components/education.js'
-import Header from './components/header.js'
-import Interests from './components/interests.js'
-import Languages from './components/languages.js'
-import Meta from './components/meta.js'
-import Projects from './components/projects.js'
-import Publications from './components/publications.js'
-import References from './components/references.js'
-import Skills from './components/skills.js'
-import Volunteer from './components/volunteer.js'
-import Work from './components/work.js'
-import colors from './utils/colors.js'
-import html from './utils/html.js'
+import Awards from "./components/awards.js"
+import Certificates from "./components/certificates.js"
+import Education from "./components/education.js"
+import Header from "./components/header.js"
+import Interests from "./components/interests.js"
+import Languages from "./components/languages.js"
+import Meta from "./components/meta.js"
+import Projects from "./components/projects.js"
+import Publications from "./components/publications.js"
+import References from "./components/references.js"
+import Skills from "./components/skills.js"
+import Volunteer from "./components/volunteer.js"
+import Work from "./components/work.js"
+import colors from "./utils/colors.js"
+import html from "./utils/html.js"
 
 export default function Resume(resume, css) {
   return html`<!doctype html>
@@ -28,10 +28,18 @@ export default function Resume(resume, css) {
         </style>
       </head>
       <body>
-        ${Header(resume.basics)} ${Work(resume.work)} ${Volunteer(resume.volunteer)} ${Projects(resume.projects)}
-        ${Awards(resume.awards)} ${Certificates(resume.certificates)} ${Publications(resume.publications)}
-        ${Skills(resume.skills)} ${Education(resume.education)} ${Languages(resume.languages)}
-        ${Interests(resume.interests)} ${References(resume.references)}
+        ${Header(resume.basics)}
+        ${Work(resume.work)}
+        ${Volunteer(resume.volunteer)}
+        ${Projects(resume.projects)}
+        ${Awards(resume.awards)}
+        ${Certificates(resume.certificates)}
+        ${Publications(resume.publications)}
+        ${Skills(resume.skills)}
+        ${Education(resume.education)}
+        ${Languages(resume.languages)}
+        ${Interests(resume.interests)}
+        ${References(resume.references)}
       </body>
     </html>`
 }
